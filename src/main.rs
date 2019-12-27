@@ -12,7 +12,7 @@ extern crate rcon;
 fn main() {
     let args: Vec<String> = env::args().collect();
     if args.len() != 2 {
-        eprintln!("Usage: rcon <cmd>");
+        eprintln!("Usage: {} <cmd>", args[0]);
         exit(1);
     }
     let cmd = &args[1];
